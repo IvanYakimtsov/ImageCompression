@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/ProjectsC/ImageCompression/image_util.cpp
+image_util.h
+D:/ProjectsC/ImageCompression/image_util.h
+
+D:/ProjectsC/ImageCompression/image_util.h
+iostream
+-
+fstream
+-
+
+D:/ProjectsC/ImageCompression/main.cpp
+iostream
+-
+fstream
+-
+time.h
+-
+assert.h
+-
+image_util.h
+D:/ProjectsC/ImageCompression/image_util.h
+

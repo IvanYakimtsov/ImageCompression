@@ -1,0 +1,9 @@
+mainProcess/.idea/
+mainProcess/cmake-build-debug/
+mainProcess/CMakeLists.txt
+fileProcess/.idea/
+fileProcess/cmake-build-debug/
+fileProcess/CMakeLists.txt
+consoleProcess/.idea/
+consoleProcess/cmake-build-debug/
+consoleProcess/CMakeLists.txt
