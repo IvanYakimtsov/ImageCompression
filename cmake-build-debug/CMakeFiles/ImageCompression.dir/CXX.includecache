@@ -7,13 +7,13 @@
 #IncludeRegexTransform: 
 
 D:/ProjectsC/ImageCompression/image_util.cpp
+malloc.h
+-
 image_util.h
 D:/ProjectsC/ImageCompression/image_util.h
 
 D:/ProjectsC/ImageCompression/image_util.h
-iostream
--
-fstream
+stdio.h
 -
 
 D:/ProjectsC/ImageCompression/main.cpp

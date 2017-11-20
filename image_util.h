@@ -1,78 +1,53 @@
-#ifndef MAIN_H_INCLUDED
-#define MAIN_H_INCLUDED
-#include <iostream>
-#include <fstream>
-// CIEXYZTRIPLE stuff
-typedef int FXPT2DOT30;
+#ifndef COMPRESSIONOFGRAPHICINFORMATIONBYNN_IMAGEPARSER_H
+#define COMPRESSIONOFGRAPHICINFORMATIONBYNN_IMAGEPARSER_H
+
+#include <stdio.h>
+
+#pragma pack(push, 2)
+typedef struct
+{
+    unsigned short int type;
+    unsigned int size;
+    unsigned short int reserved1;
+    unsigned short int reserved2;
+    unsigned int offset;
+} BmpHeader;
+
+typedef struct
+{
+    int headerSize;
+    int width;
+    int height;
+    unsigned short planeCount;
+    unsigned short bitsPerPixel;
+    unsigned int compression;
+    unsigned int imageSize;
+    int xResolution;
+    int yResolution;
+    unsigned int colorsCount;
+    unsigned int importantColors;
+
+} BmpImageInfo;
 
 typedef struct {
-    FXPT2DOT30 ciexyzX;
-    FXPT2DOT30 ciexyzY;
-    FXPT2DOT30 ciexyzZ;
-} CIEXYZ;
+    unsigned char red;
+    unsigned char green;
+    unsigned char blue;
+    unsigned char junk;
+} RGB;
+#pragma pack(pop)
 
 typedef struct {
-    CIEXYZ  ciexyzRed;
-    CIEXYZ  ciexyzGreen;
-    CIEXYZ  ciexyzBlue;
-} CIEXYZTRIPLE;
+    RGB **matrixOfPixels;
+    unsigned int height;
+    unsigned int width;
+} MatrixOfImage;
 
-// bitmap file header
-typedef struct {
-    unsigned short bfType;
-    unsigned int   bfSize;
-    unsigned short bfReserved1;
-    unsigned short bfReserved2;
-    unsigned int   bfOffBits;
-} BITMAPFILEHEADER;
-
-// bitmap info header
-typedef struct {
-    char*          filename;
-    unsigned int   biSize;
-    unsigned int   biWidth;
-    unsigned int   biHeight;
-    unsigned short biPlanes;
-    unsigned short biBitCount;
-    unsigned int   biCompression;
-    unsigned int   biSizeImage;
-    unsigned int   biXPelsPerMeter;
-    unsigned int   biYPelsPerMeter;
-    unsigned int   biClrUsed;
-    unsigned int   biClrImportant;
-    unsigned int   biRedMask;
-    unsigned int   biGreenMask;
-    unsigned int   biBlueMask;
-    unsigned int   biAlphaMask;
-    unsigned int   biCSType;
-    CIEXYZTRIPLE   biEndpoints;
-    unsigned int   biGammaRed;
-    unsigned int   biGammaGreen;
-    unsigned int   biGammaBlue;
-    unsigned int   biIntent;
-    unsigned int   biProfileData;
-    unsigned int   biProfileSize;
-    unsigned int   biReserved;
-} BITMAPINFOHEADER;
-
-// rgb quad
-typedef struct {
-    unsigned char  rgbBlue;
-    unsigned char  rgbGreen;
-    unsigned char  rgbRed;
- //   unsigned char  rgbReserved;
-} RGBQUAD;
-
-// read bytes
-template <typename Type>
-void read(std::ifstream &fp, Type &result, std::size_t size) {
-    fp.read(reinterpret_cast<char*>(&result), size);
-}
-
-// bit extract
-unsigned char bitextract(const unsigned int byte, const unsigned int mask);
-
-RGBQUAD** getRGB(BITMAPINFOHEADER fileInfoHeader);
-BITMAPINFOHEADER getImageInfo(char* fileName);
-
-#endif // MAIN_H_INCLUDEDs
+MatrixOfImage* getMatrixOfImage(char *imagePath);
+RGB **getMatrixOfPixels(char *imagePath);
+BmpHeader readBmpHeader(FILE *readImage);
+BmpImageInfo readBmpImageInfo(FILE *readImage);
+RGB* readBmpImagePalette(FILE *readImage, unsigned int colorsCount);
+RGB** createMatrixOfPixels(unsigned int imageWidth, unsigned int imageHeight);
+RGB** readMatrixOfPixels(FILE *readImage, unsigned int imageWidth, unsigned int imageHeight);
+#endif //COMPRESSIONOFGRAPHICINFORMATIONBYNN_IMAGEPARSER_H
