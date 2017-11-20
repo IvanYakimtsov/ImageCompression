@@ -1,7 +1,9 @@
 #include <malloc.h>
 #include "image_util.h"
 
+BmpHeader bmpHeader;
 BmpImageInfo bmpImageInfo;
+RGB *palette;
 
 MatrixOfImage* getMatrixOfImage(char *imagePath) {
     MatrixOfImage *matrixOfImage = (MatrixOfImage *) malloc(sizeof(MatrixOfImage));
@@ -13,9 +15,10 @@ MatrixOfImage* getMatrixOfImage(char *imagePath) {
 
 RGB **getMatrixOfPixels(char *imagePath) {
     FILE *readImage = fopen(imagePath, "rb");
-    readBmpHeader(readImage);
+    bmpHeader = readBmpHeader(readImage);
     bmpImageInfo = readBmpImageInfo(readImage);
-    readBmpImagePalette(readImage, bmpImageInfo.colorsCount);
+    fseek(readImage, bmpHeader.bfOffBits, SEEK_SET);
+//    readBmpImagePalette(readImage, bmpImageInfo.colorsCount);
     RGB **matrixOfPixels = readMatrixOfPixels(readImage, bmpImageInfo.height, bmpImageInfo.width);
     fclose(readImage);
     return matrixOfPixels;
@@ -63,4 +66,28 @@ RGB** readMatrixOfPixels(FILE *readImage, unsigned int imageHeight, unsigned int
         }
     }
     return matrixOfPixels;
+}
+
+void formImage(MatrixOfImage *matrixOfImage) {
+    FILE *file = fopen("result.bmp", "wb");
+
+    fwrite(&bmpHeader,1,sizeof(bmpHeader),file);
+    fwrite(&bmpImageInfo, 1, sizeof(bmpImageInfo), file);
+    fseek(file, bmpHeader.bfOffBits, SEEK_SET);
+
+//    fwrite(&palette, 1, sizeof(palette), file);
+
+    for (int heightIndex = 0; heightIndex < matrixOfImage->height; heightIndex++) {
+        for (int widthIndex = 0; widthIndex < matrixOfImage->width; widthIndex++) {
+
+            unsigned char red = matrixOfImage->matrixOfPixels[heightIndex][widthIndex].red;
+            unsigned char green = matrixOfImage->matrixOfPixels[heightIndex][widthIndex].green;
+            unsigned char blue = matrixOfImage->matrixOfPixels[heightIndex][widthIndex].blue;
+            fwrite(&red, 1, 1, file);
+            fwrite(&green, 1, 1, file);
+            fwrite(&blue, 1, 1, file);
+        }
+    }
+    fclose(file);
+
 }

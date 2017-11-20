@@ -45,9 +45,8 @@ void normalize_array(double **X, int x_h, int x_w, int block_high, int block_wid
 int main(int argc, char *argv[]) {
     srand(time(0));
     std::string path = "Lenna.bmp";
-//    BITMAPINFOHEADER fileInfoHeader = getImageInfo(name);
-//    RGBQUAD **rgbInfo = getRGB(fileInfoHeader);
-    //RGB **rgbInfo = getMatrixOfPixels((char *) path.c_str());
+    double MAX_VALUE = 0.1;
+
     MatrixOfImage *matrixOfImage = getMatrixOfImage((char *) path.c_str());
     RGB **rgbInfo = matrixOfImage->matrixOfPixels;
     int block_width;
@@ -66,7 +65,6 @@ int main(int argc, char *argv[]) {
     int x_w = matrixOfImage->width / block_width;
     int x_h = matrixOfImage->height / block_high;
     double L = x_w * x_h;
-    //double X[x_w * x_h][N];
 
     double **X = createMatrix(x_w * x_h, N);
 
@@ -79,7 +77,7 @@ int main(int argc, char *argv[]) {
     double **W_B_T = createMatrix(N, neuronAmount);
     for (int i = 0; i < N; i++)
         for (int j = 0; j < neuronAmount; j++) {
-            W[i][j] = ((double) (rand()) / RAND_MAX) * 0.1;
+            W[i][j] = ((double) (rand()) / RAND_MAX) * MAX_VALUE;
         }
     for (int i = 0; i < N; i++)
         for (int j = 0; j < neuronAmount; j++) {
@@ -96,7 +94,9 @@ int main(int argc, char *argv[]) {
     double tmp;
     double *tmpArray = new double[neuronAmount];
     for (int i = 0; i < neuronAmount; i++) tmpArray[i] = 0;
-    double e = 1*neuronAmount;
+    double e;
+    std::cout << std::endl << "input max error: ";
+    std::cin >> e;
     double E = e + 1;
     //--------------------------------------------------------------------------------------
     int iteration = 0;
@@ -132,7 +132,6 @@ int main(int argc, char *argv[]) {
                 tmp += Y[index][i] * Y[index][i];
             }
             alpha_b = 1 / tmp;
-            //      alpha_b = 0.0379105;
             //tmpMatrixPN = alpha_B * (Y)_T[index] * delta_X[index]
             for (int i = 0; i < neuronAmount; i++) {
                 for (int j = 0; j < N; j++) {
@@ -164,7 +163,6 @@ int main(int argc, char *argv[]) {
                 tmp += X[index][i] * X[index][i];
             }
             alpha = 1 / tmp;
-            //     alpha = 0.0379105;
 
             //(X[index])_T * delta_X[i] * (W_B)_T
             for (int i = 0; i < N; i++)
@@ -208,28 +206,7 @@ int main(int argc, char *argv[]) {
             index++;
         }
     }
-
-    for (unsigned int i = 0; i < matrixOfImage->height; i++) {
-        for (unsigned int j = 0; j < matrixOfImage->width; j++) {
-            std::cout << +rgbInfo[i][j].red << " "
-                      << +rgbInfo[i][j].green << " "
-                      << +rgbInfo[i][j].blue << " "
-                      //     << +rgbInfo[i][j].rgbReserved
-                      << std::endl;
-        }
-        std::cout << std::endl;
-    }
+    matrixOfImage->matrixOfPixels = rgbInfo;
+    formImage(matrixOfImage);
     return 0;
 }
-
-
-//for (unsigned int i = 0; i < matrixOfImage->height; i++) {
-//for (unsigned int j = 0; j < matrixOfImage->width; j++) {
-//std::cout << +rgbInfo[i][j].red << " "
-//<< +rgbInfo[i][j].green << " "
-//<< +rgbInfo[i][j].blue << " "
-////     << +rgbInfo[i][j].rgbReserved
-//<< std::endl;
-//}
-//std::cout << std::endl;
-//}
