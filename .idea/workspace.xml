@@ -12,8 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eec66b6a-28e6-48ef-aa05-a84c6ead3799" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_util.cpp" afterPath="$PROJECT_DIR$/image_util.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/image_util.h" afterPath="$PROJECT_DIR$/image_util.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/Lenna.bmp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageCompression.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageCompression.dir/main.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageCompression.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageCompression.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/ImageCompression.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/ImageCompression.exe" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageCompression.dir/CXX.includecache" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/ImageCompression.dir/CXX.includecache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -27,14 +31,38 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1672">
-              <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+            <state relative-caret-position="-1457">
+              <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#944#1925#0" expanded="false" />
+                <element signature="e#1927#3471#0" expanded="false" />
+                <element signature="e#4046#4318#0" expanded="false" />
+                <element signature="e#4320#4501#0" expanded="false" />
+                <element signature="e#4504#5154#0" expanded="false" />
+                <element signature="e#5156#6135#0" expanded="false" />
+                <element signature="e#6137#6603#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.bmp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/result.bmp">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image_util.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_util.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,16 +79,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="image_util.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image_util.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -71,8 +89,8 @@
       <list>
         <option value="$PROJECT_DIR$/main.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/image_util.cpp" />
-        <option value="$PROJECT_DIR$/image_util.h" />
         <option value="$PROJECT_DIR$/image_util.cpp" />
+        <option value="$PROJECT_DIR$/image_util.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -141,6 +159,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjectsC\ImageCompression\cmake-build-debug" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\ProjectsC\ImageCompression" />
     </key>
@@ -385,27 +406,33 @@
       <workItem from="1511117620653" duration="2775000" />
       <workItem from="1511121678481" duration="47000" />
       <workItem from="1511122356034" duration="915000" />
-      <workItem from="1511161747123" duration="1332000" />
+      <workItem from="1511161747123" duration="10469000" />
+      <workItem from="1511177873709" duration="1272000" />
+      <workItem from="1511250493637" duration="770000" />
+      <workItem from="1511262007385" duration="3362000" />
+      <workItem from="1511434228194" duration="230000" />
+      <workItem from="1511689717918" duration="3454000" />
+      <workItem from="1511694407263" duration="1480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60562000" />
+    <option name="totallyTimeSpent" value="80267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34568834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37897125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934534" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -429,51 +456,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3213">
-          <caret line="189" column="38" lean-forward="false" selection-start-line="189" selection-start-column="38" selection-end-line="189" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_util.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_util.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="46" lean-forward="false" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2193">
-          <caret line="129" column="6" lean-forward="false" selection-start-line="129" selection-start-column="6" selection-end-line="129" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -505,6 +487,13 @@
           <caret line="166" column="17" lean-forward="true" selection-start-line="166" selection-start-column="17" selection-end-line="166" selection-end-column="17" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -540,6 +529,13 @@
           <caret line="179" column="13" lean-forward="true" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -557,6 +553,13 @@
           <caret line="159" column="5" lean-forward="false" selection-start-line="159" selection-start-column="5" selection-end-line="159" selection-end-column="5" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -610,6 +613,13 @@
           <caret line="145" column="56" lean-forward="false" selection-start-line="145" selection-start-column="56" selection-end-line="145" selection-end-column="56" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -645,6 +655,13 @@
           <caret line="59" column="62" lean-forward="false" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -680,6 +697,13 @@
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -715,6 +739,13 @@
           <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -750,6 +781,13 @@
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -767,6 +805,13 @@
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -810,6 +855,13 @@
           <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -822,9 +874,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/result_image.bmp" />
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Lenna.bmp">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/Lenna.bmp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test3.bmp">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test2.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/image1.bmp" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test4.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_util.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/image_util.cpp">
@@ -837,27 +909,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/image_util.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/result.bmp">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/test1.bmp">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1672">
-          <caret line="98" column="18" lean-forward="true" selection-start-line="98" selection-start-column="18" selection-end-line="98" selection-end-column="18" />
+        <state relative-caret-position="-1457">
+          <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#944#1925#0" expanded="false" />
+            <element signature="e#1927#3471#0" expanded="false" />
+            <element signature="e#4046#4318#0" expanded="false" />
+            <element signature="e#4320#4501#0" expanded="false" />
+            <element signature="e#4504#5154#0" expanded="false" />
+            <element signature="e#5156#6135#0" expanded="false" />
+            <element signature="e#6137#6603#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/result.bmp">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
